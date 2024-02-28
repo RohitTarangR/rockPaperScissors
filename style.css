@@ -1,0 +1,107 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    }
+
+    h1{
+        background: linear-gradient(270deg, rgba(240,131,162,1) 15%, rgba(127,172,255,1) 100%);
+        color: black;
+        height: 5rem;
+        line-height: 5rem;
+    }
+
+    .choice{
+        height: 165px;
+        width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    
+    .choice:hover{
+        cursor: pointer;
+        background-color: whitesmoke;
+        scale: 1.1;
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+
+    .score-board{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+        gap: 5rem;
+    }
+
+    #user-score,#comp-score{
+        font-size: 4rem;
+    }
+
+    .msg-container{
+        margin-top: 5rem;
+    }
+
+    #msg{
+        background: linear-gradient(270deg, rgba(240,131,162,1) 15%, rgba(127,172,255,1) 100%);
+        font-size: 2rem;
+        display: inline;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        #msg{
+            font-size: larger;
+        }
+        h1{
+            font-size: x-large;
+        }
+        .choice{
+            width: 100px;
+            height: 100px;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        .choices{
+            gap: 2rem;
+        }
+        #user-score,#comp-score{
+            font-size: 3rem;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        #msg{
+            font-size: 12px;
+        }
+        .choices{
+            gap: 1rem;
+        }
+    }
